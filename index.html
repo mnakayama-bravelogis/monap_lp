@@ -8,7 +8,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Bebas+Neue&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 :root {
@@ -633,14 +632,11 @@ section { padding: 96px 24px; }
   width: 40px;
   height: 40px;
 }
-.feature-icon-wrap i {
-  font-size: 28px;
-  color: #ffffff;
-}
-.feature-icon-wrap .fa-stack {
-  font-size: 14px;
-  color: #ffffff;
-  line-height: 1;
+.feature-icon-img {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  display: block;
 }
 
 .feature-body {}
@@ -1318,73 +1314,42 @@ footer {
     </div>
     <div class="features-list">
       <div class="feature-item fade-up">
-        <div class="feature-icon-wrap">
-          <svg viewBox="4 4 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- スコア数字 -->
-            <text x="26" y="22" text-anchor="middle" font-family="'Barlow Condensed',sans-serif" font-weight="700" font-size="18" fill="currentColor">92</text>
-            <!-- 区切り線 -->
-            <line x1="8" y1="28" x2="44" y2="28" stroke="currentColor" stroke-width="1" stroke-opacity="0.5"/>
-            <!-- 折れ線グラフ -->
-            <polyline points="8,44 16,38 22,40 30,32 38,35 44,28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <!-- グラフの点 -->
-            <circle cx="8" cy="44" r="1.8" fill="currentColor"/>
-            <circle cx="30" cy="32" r="1.8" fill="currentColor"/>
-            <circle cx="44" cy="28" r="1.8" fill="currentColor"/>
-          </svg>
-        </div>
+        <img src="images/icon_01.png" alt="安全運転スコアリング機能" class="feature-icon-img">
         <div class="feature-body">
           <h3 class="feature-title">安全運転スコアリング機能</h3>
           <p class="feature-desc">日々の急加速や急ブレーキ、運転中の画面操作を自動記録・分析し、ドライバーの安全運転スコアを算出。データに基づいた的確な安全指導が可能です。</p>
         </div>
       </div>
       <div class="feature-item fade-up">
-        <div class="feature-icon-wrap" style="gap:4px; flex-direction:row; width:68px; padding:0 6px;">
-          <div style="display:flex;flex-direction:column;align-items:center;opacity:0.5;">
-            <i class="fa-solid fa-steering-wheel" style="font-size:13px;color:#fff;margin-bottom:2px;"></i>
-            <i class="fa-solid fa-person" style="font-size:18px;color:#fff;"></i>
-          </div>
-          <div style="width:1px;background:rgba(255,255,255,0.4);margin:6px 2px;"></div>
-          <div style="display:flex;flex-direction:column;align-items:center;">
-            <i class="fa-solid fa-caret-down" style="font-size:11px;color:#fff;margin-bottom:2px;"></i>
-            <i class="fa-solid fa-person" style="font-size:22px;color:#fff;"></i>
-          </div>
-        </div>
+        <img src="images/icon_02.png" alt="助手席モード" class="feature-icon-img">
         <div class="feature-body">
           <h3 class="feature-title">助手席モード</h3>
           <p class="feature-desc">ドライバー以外の同乗者が操作する場合、一定時間のみ走行中の操作ロックを解除。同乗者の利便性を確保しながら、安全管理を徹底できます。</p>
         </div>
       </div>
       <div class="feature-item fade-up">
-        <div class="feature-icon-wrap">
-          <i class="fa-solid fa-headset"></i>
-        </div>
+        <img src="images/icon_03.png" alt="ハンズフリー機器での着信機能" class="feature-icon-img">
         <div class="feature-body">
           <h3 class="feature-title">ハンズフリー機器での着信機能</h3>
           <p class="feature-desc">ハンズフリー機器（Bluetoothイヤホン、車載用Bluetooth）接続時、着信応対が可能。業務上必要な通話を妨げることなく、安全運転を実現します。</p>
         </div>
       </div>
       <div class="feature-item fade-up">
-        <div class="feature-icon-wrap">
-          <i class="fa-solid fa-shield-halved"></i>
-        </div>
+        <img src="images/icon_04.png" alt="ホワイトリスト機能" class="feature-icon-img">
         <div class="feature-body">
           <h3 class="feature-title">ホワイトリスト機能</h3>
           <p class="feature-desc">あらかじめ登録しておいた電話番号からの着信を許可。緊急時や重要取引先からの通知を確実に受け取ることができます。</p>
         </div>
       </div>
       <div class="feature-item fade-up">
-        <div class="feature-icon-wrap">
-          <i class="fa-solid fa-comment-sms"></i>
-        </div>
+        <img src="images/icon_05.png" alt="ショートメッセージによる一次応答機能" class="feature-icon-img">
         <div class="feature-body">
           <h3 class="feature-title">ショートメッセージによる一次応答機能</h3>
           <p class="feature-desc">着信拒否時に、自動でショートメッセージ（SMS）を発信者へ送信。「運転中のため折り返します」などのメッセージで、相手への配慮も万全です。</p>
         </div>
       </div>
       <div class="feature-item fade-up">
-        <div class="feature-icon-wrap">
-          <i class="fa-solid fa-circle-stop"></i>
-        </div>
+        <img src="images/icon_06.png" alt="メディア自動停止機能" class="feature-icon-img">
         <div class="feature-body">
           <h3 class="feature-title">メディア自動停止機能</h3>
           <p class="feature-desc">走行を検知すると、再生中の動画やストリーミング系アプリを自動で停止。ながらスマホのきっかけとなるコンテンツ再生を、仕組みで根絶します。</p>
